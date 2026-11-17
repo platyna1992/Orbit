@@ -1,0 +1,53 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+		A00000000000000000000001 /* Orbit OrbitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000001 /* OrbitApp.swift */; };
+		A00000000000000000000002 /* OrbitWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000004 /* OrbitWidget.swift */; };
+		A00000000000000000000003 /* Orbit.icns in Resources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000003 /* Orbit.icns */; };
+		A00000000000000000000004 /* OrbitWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B00000000000000000000007 /* OrbitWidgetExtension.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+
+		B00000000000000000000001 /* OrbitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitApp.swift; sourceTree = "<group>"; };
+		B00000000000000000000002 /* Orbit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00000000000000000000003 /* Orbit.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Orbit.icns; sourceTree = "<group>"; };
+		B00000000000000000000004 /* OrbitWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitWidget.swift; sourceTree = "<group>"; };
+		B00000000000000000000005 /* OrbitWidget-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00000000000000000000006 /* Orbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00000000000000000000007 /* OrbitWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = wrapper.app-extension; includeInIndex = 0; path = OrbitWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+
+		C00000000000000000000001 = {isa = PBXGroup; children = (C00000000000000000000002 /* Sources */, C00000000000000000000004 /* WidgetExtension */, C00000000000000000000005 /* Resources */, C00000000000000000000006 /* Products */, ); sourceTree = "<group>"; };
+		C00000000000000000000002 /* Sources */ = {isa = PBXGroup; children = (C00000000000000000000003 /* Orbit */, ); path = Sources; sourceTree = "<group>"; };
+		C00000000000000000000003 /* Orbit */ = {isa = PBXGroup; children = (B00000000000000000000001 /* OrbitApp.swift */, ); path = Orbit; sourceTree = "<group>"; };
+		C00000000000000000000004 /* WidgetExtension */ = {isa = PBXGroup; children = (B00000000000000000000004 /* OrbitWidget.swift */, B00000000000000000000005 /* OrbitWidget-Info.plist */, ); path = WidgetExtension; sourceTree = "<group>"; };
+		C00000000000000000000005 /* Resources */ = {isa = PBXGroup; children = (B00000000000000000000002 /* Orbit-Info.plist */, B00000000000000000000003 /* Orbit.icns */, ); path = Resources; sourceTree = "<group>"; };
+		C00000000000000000000006 /* Products */ = {isa = PBXGroup; children = (B00000000000000000000006 /* Orbit.app */, B00000000000000000000007 /* OrbitWidgetExtension.appex */, ); name = Products; sourceTree = "<group>"; };
+
+		D00000000000000000000001 /* PBXContainerItemProxy */ = {isa = PBXContainerItemProxy; containerPortal = F00000000000000000000001 /* Project object */; proxyType = 1; remoteGlobalIDString = E00000000000000000000002; remoteInfo = OrbitWidgetExtension; };
+		D00000000000000000000002 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = E00000000000000000000002 /* OrbitWidgetExtension */; targetProxy = D00000000000000000000001 /* PBXContainerItemProxy */; };
+
+		E00000000000000000000001 /* Orbit */ = {isa = PBXNativeTarget; buildConfigurationList = FC0000000000000000000013 /* Orbit configurations */; buildPhases = (F10000000000000000000001 /* Orbit Sources */, F10000000000000000000002 /* Orbit Frameworks */, F10000000000000000000003 /* Orbit Resources */, F10000000000000000000004 /* Embed App Extensions */, ); buildRules = (); dependencies = (D00000000000000000000002 /* OrbitWidgetExtension dependency */, ); name = Orbit; productName = Orbit; productReference = B00000000000000000000006 /* Orbit.app */; productType = "com.apple.product-type.application"; };
+		E00000000000000000000002 /* OrbitWidgetExtension */ = {isa = PBXNativeTarget; buildConfigurationList = FC0000000000000000000014 /* Widget configurations */; buildPhases = (F10000000000000000000005 /* Widget Sources */, F10000000000000000000006 /* Widget Frameworks */, F10000000000000000000007 /* Widget Resources */, ); buildRules = (); dependencies = (); name = OrbitWidgetExtension; productName = OrbitWidgetExtension; productReference = B00000000000000000000007 /* OrbitWidgetExtension.appex */; productType = "com.apple.product-type.app-extension"; };
+
+		F00000000000000000000001 /* Project object */ = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastUpgradeCheck = 2720; TargetAttributes = {E00000000000000000000001 = {CreatedOnToolsVersion = 27.2; }; E00000000000000000000002 = {CreatedOnToolsVersion = 27.2; }; }; }; buildConfigurationList = FC0000000000000000000010 /* Project configurations */; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; mainGroup = C00000000000000000000001; productRefGroup = C00000000000000000000006 /* Products */; projectDirPath = ""; projectRoot = ""; targets = (E00000000000000000000001 /* Orbit */, E00000000000000000000002 /* OrbitWidgetExtension */, ); };
+		F10000000000000000000001 /* Orbit Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A00000000000000000000001 /* OrbitApp.swift in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
+		F10000000000000000000002 /* Orbit Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		F10000000000000000000003 /* Orbit Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A00000000000000000000003 /* Orbit.icns in Resources */, ); runOnlyForDeploymentPostprocessing = 0; };
+		F10000000000000000000004 /* Embed App Extensions */ = {isa = PBXCopyFilesBuildPhase; buildActionMask = 2147483647; dstPath = ""; dstSubfolderSpec = 13; files = (A00000000000000000000004 /* OrbitWidgetExtension.appex in Embed App Extensions */, ); name = "Embed App Extensions"; runOnlyForDeploymentPostprocessing = 0; };
+		F10000000000000000000005 /* Widget Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A00000000000000000000002 /* OrbitWidget.swift in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
+		F10000000000000000000006 /* Widget Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		F10000000000000000000007 /* Widget Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+
+		FC0000000000000000000010 /* Project configurations */ = {isa = XCConfigurationList; buildConfigurations = (FC0000000000000000000011 /* Debug */, FC0000000000000000000012 /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		FC0000000000000000000011 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 14.0; SDKROOT = macosx; SWIFT_VERSION = 5.0; }; name = Debug; };
+		FC0000000000000000000012 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 14.0; SDKROOT = macosx; SWIFT_VERSION = 5.0; }; name = Release; };
+		FC0000000000000000000013 /* Orbit configurations */ = {isa = XCConfigurationList; buildConfigurations = (FC0000000000000000000015 /* Debug */, FC0000000000000000000016 /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		FC0000000000000000000014 /* Widget configurations */ = {isa = XCConfigurationList; buildConfigurations = (FC0000000000000000000017 /* Debug */, FC0000000000000000000018 /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		FC0000000000000000000015 /* Orbit Debug */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_IDENTITY = "-"; CODE_SIGN_STYLE = Manual; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Resources/Info.plist; MACOSX_DEPLOYMENT_TARGET = 14.0; PRODUCT_BUNDLE_IDENTIFIER = com.theyscripters.Orbit; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = macosx; SWIFT_VERSION = 5.0; }; name = Debug; };
+		FC0000000000000000000016 /* Orbit Release */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_IDENTITY = "-"; CODE_SIGN_STYLE = Manual; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Resources/Info.plist; MACOSX_DEPLOYMENT_TARGET = 14.0; PRODUCT_BUNDLE_IDENTIFIER = com.theyscripters.Orbit; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = macosx; SWIFT_VERSION = 5.0; }; name = Release; };
+		FC0000000000000000000017 /* Widget Debug */ = {isa = XCBuildConfiguration; buildSettings = {APPLICATION_EXTENSION_API_ONLY = YES; CODE_SIGN_IDENTITY = "-"; CODE_SIGN_STYLE = Manual; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = WidgetExtension/Info.plist; MACOSX_DEPLOYMENT_TARGET = 14.0; PRODUCT_BUNDLE_IDENTIFIER = com.theyscripters.Orbit.Widget; PRODUCT_NAME = OrbitWidgetExtension; SDKROOT = macosx; SKIP_INSTALL = YES; SWIFT_VERSION = 5.0; }; name = Debug; };
+		FC0000000000000000000018 /* Widget Release */ = {isa = XCBuildConfiguration; buildSettings = {APPLICATION_EXTENSION_API_ONLY = YES; CODE_SIGN_IDENTITY = "-"; CODE_SIGN_STYLE = Manual; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = WidgetExtension/Info.plist; MACOSX_DEPLOYMENT_TARGET = 14.0; PRODUCT_BUNDLE_IDENTIFIER = com.theyscripters.Orbit.Widget; PRODUCT_NAME = OrbitWidgetExtension; SDKROOT = macosx; SKIP_INSTALL = YES; SWIFT_VERSION = 5.0; }; name = Release; };
+	};
+	rootObject = F00000000000000000000001 /* Project object */;
+}

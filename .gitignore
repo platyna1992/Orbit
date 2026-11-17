@@ -1,0 +1,7 @@
+.build/
+build/*
+!build/Orbit.zip
+DerivedData/
+.DS_Store
+*.xcuserstate
+xcuserdata/
