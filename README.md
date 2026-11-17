@@ -8,7 +8,7 @@ Requires Xcode 27 or later. Accept the Xcode license once, then run `make app` t
 
 ## Current readings
 
-- CPU utilization is measured from Mach processor ticks and refreshed every 1.5 seconds.
+- CPU utilization is measured from Mac processor ticks and refreshed every 1.5 seconds.
 - Memory usage and available memory are estimated from the system VM page counts.
 - Storage usage and available capacity come from the user's home volume.
 - The thermal card uses macOS's system-wide thermal state (`nominal`, `fair`, `serious`, or `critical`); it is not a CPU or GPU temperature reading.
